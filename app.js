@@ -22,7 +22,7 @@ async function addData() {
         "Content-Type": "application/json",
         "ngrok-skip-browser-warning": true,
         Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6Inkya2RqOTcyM0BuYXZlci5jb20iLCJpYXQiOjE2NzA5MzQxNTksImV4cCI6MTY3MTUzODk1OX0.aQ4PmxIHOjk3muh26-1h-5lr9hHlUyzK3KL2Q-ChUag",
+          "Bearer eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6Inkya2RqOTcyM0BuYXZlci5jb20iLCJpYXQiOjE2NzExOTMyODcsImV4cCI6MTY3MTc5ODA4N30.2NUMWLdRhXeOIMlDymEhDa0T7818JHPDY8oL6AGJiho",
       },
       data: {
         name: generator.generatePhrase(),
@@ -33,9 +33,8 @@ async function addData() {
         detailAddress: "123-456",
         weekdayPricePerHalfHour: price,
         holidayPricePerHalfHour: price * (Math.random() + 1),
-        openTime: "09:00:00",
-        closeTime: "18:00:00",
-
+        openTime: "09:00",
+        closeTime: "18:00",
         imgs: [
           {
             publicId: "sample_img_id",
@@ -43,7 +42,7 @@ async function addData() {
           },
         ],
         tags: ["soccer", "bascketball", "badminton"],
-        items: [
+        rentalItems: [
           {
             name: "라켓",
             price: price * Math.random(),
